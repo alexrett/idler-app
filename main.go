@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	i := idler.Idle{}
+	i := idler.NewIdle()
 	for {
 		fmt.Println(i.GetIdleTime())
 		time.Sleep(time.Second * 1)
